@@ -25,7 +25,7 @@ export const InputStyled = styled.input`
   border: 2px solid palevioletred;
   border-radius: 3px;
   padding: 0.5rem;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   display: block;
   width: 40%;
 `;
@@ -65,4 +65,25 @@ export const Wrapper = styled.div`
   margin: 1rem auto;
   display: block;
   width: 40%;
+`;
+
+export const Itemstyle = styled.p`
+  /* text-align: right; */
+  /* padding-right: 80px;
+  border-bottom-color: red; */
+  /* border-bottom-style: ridge; */
+  font-family: monospace;
+  color: black;
+  /* margin-bottom: 70px; */
+  /* padding-bottom: 10px;
+  border-bottom-style: ridge; */
+  font-size: 15px;
+  /* justify-content: right; */
+`;
+
+export const Liststyle = styled.div`
+  justify-content: flex-end;
+  /* display: flex; */
+  /* object-fit: flex; */
+  /* flex-wrap: wrap; */
 `;
