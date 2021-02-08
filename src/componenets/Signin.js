@@ -7,7 +7,7 @@ function Signin() {
   return (
     <div>
       <Link to={`/Storepage`}>
-        <Button on> signin </Button>
+        <Button on> signin (enter to go to admin page) </Button>
       </Link>
     </div>
   );

@@ -8,7 +8,10 @@ function Storepage() {
       <Link to={`/allreservation`}>
         <Button>reservation history</Button>
       </Link>
-      <Button> edit reserrvation </Button>
+
+      <Link to={`/editreservation`}>
+        <Button>Edit reservation</Button>
+      </Link>
     </div>
   );
 }

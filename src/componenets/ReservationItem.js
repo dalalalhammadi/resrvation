@@ -7,7 +7,7 @@ const ReservationItem = ({ reservation }) => {
     <div>
       <Itemstyle>{reservation.email}</Itemstyle>
 
-      <Itemstyle>{reservation.day}</Itemstyle>
+      {/* <Itemstyle>{reservation.day}</Itemstyle> */}
     </div>
   );
 };
