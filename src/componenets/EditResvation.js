@@ -21,16 +21,27 @@ import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Button from "@material-ui/core/Button";
 
-function AllReservation() {
-  const totalRes = reservationStore.reservations.map((reservation) => (
-    <ReservationItem reservation={reservation} key={reservation.id} />
+function EditResvation() {
+  const AllTimesList = timeStore.times.map((time) => (
+    <MenuItem>{time.timeRange}</MenuItem>
   ));
 
   return (
     <div>
-      <Liststyle>{totalRes}</Liststyle>
+      <Select
+        labelId="demo-controlled-open-select-label"
+        id="demo-controlled-open-select"
+        // open={open}
+        // onClose={handleClose}
+        // onOpen={handleOpen}
+        // value={time}
+        name="time"
+        // onChange={handleChange}
+      >
+        {AllTimesList}
+      </Select>
     </div>
   );
 }
 
-export default observer(AllReservation);
+export default observer(EditResvation);

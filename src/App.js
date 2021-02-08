@@ -4,6 +4,7 @@ import Storepage from "./componenets/Storepage";
 import AllReservation from "./componenets/AllReservation";
 import Signin from "./componenets/Signin";
 import { Route, Switch } from "react-router";
+import EditResvation from "./componenets/EditResvation";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route path="/allreservation">
           <AllReservation />
+        </Route>
+        <Route path="/editreservation">
+          <EditResvation />
         </Route>
         <Route path="/storepage">
           <Storepage />
